@@ -1,10 +1,9 @@
-from functools import partial
 
 from ksdyn.core import KeystrokeCaptureData
-from ksdyn.model import Fingerprint, FingerprintDatabase
+from ksdyn.model import FingerprintDatabase
 from ksdyn.sugar import create_fingerprint_from_capture_data
 
-DATA_DIR= "data/"
+DATA_DIR= "/home/adam/development/college-code/sem-5/CSE3013-AI/keystroke_dynamics/data/"
 
 
 example_text1='''Wikipedia is a free-access, free content Internet encyclopedia, supported and hosted by the non-profit Wikimedia Foundation. Those who can access the site and follow its rules can edit most of its articles. Wikipedia is ranked among the ten most popular websites and constitutes the Internet's largest and most popular general reference work.'''
@@ -51,4 +50,3 @@ if __name__=='__main__':
         match_fingerprint()
     else:
         print "Bad option"
-
